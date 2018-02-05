@@ -14,17 +14,17 @@ public class Cat extends Pet {
 //    }
     public String catto() {
         int catAge;
-        switch (getAge()) {
+        switch (super.getAge()) {
+            case 0: catAge = 0;
+                    break;
             case 1: catAge = 19;
                     break;
             case 2: catAge = 24;
                     break;
-            case 3: catAge = (getAge() - 2) * 4 + 24;
-                    break;
-            default:catAge = 0;
+            default:catAge = (super.getAge() - 2) * 4 + 24;
                     break;
         }
-        String catInfo = (getPetName() + " is " + getAge() + " in human years, and " + catAge + " in cat years. \n");
+        String catInfo = (super.getPetName() + " is " + super.getAge() + " in human years, and " + catAge + " in cat years. \n");
         return catInfo;
     }
 }

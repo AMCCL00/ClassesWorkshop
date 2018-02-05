@@ -4,6 +4,8 @@ public class Pet {
 
     public Pet() {
 
+        // this is used when you have two variables of the same name in different classes and u want to access the one from the local class.
+
     }
 
     private String petName;
